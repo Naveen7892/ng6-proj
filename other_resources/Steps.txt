@@ -57,7 +57,9 @@ project will be built in dist folder of root directory
 >> git push -u origin master
 
 ===============================================================
-Link: https://alligator.io/angular/deploying-angular-app-github-pages/
+Links: 
+https://alligator.io/angular/deploying-angular-app-github-pages/
+https://github.com/angular-schule/angular-cli-ghpages/issues/37
 
 >> npm install -g angular-cli-ghpages
 
@@ -65,7 +67,7 @@ Link: https://alligator.io/angular/deploying-angular-app-github-pages/
 
 >> ngh
 or
->> ngh --repo="https://<username>:<password>@github.com/Naveen7892/ng5.git" --name="Naveen Kumar" --email="metanaveen@outlook.com" --no-silent
+>> ngh --repo="https://<username>:<password>@github.com/Naveen7892/ng5.git" --name="Naveen Kumar" --email="metanaveen@outlook.com" --no-silent --dir dist\ng6-proj
 
 NOTE:
 - github.com > repo > settings > GitHub Pages > Source > select gh-pages branch (if not selected already)
