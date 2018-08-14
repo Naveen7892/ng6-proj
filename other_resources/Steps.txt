@@ -73,3 +73,49 @@ NOTE:
 - github.com > repo > settings > GitHub Pages > Source > select gh-pages branch (if not selected already)
 - comment dist/ to #dist/ in .gitignore
 - git commit and push to repo.
+
+================================================
+TO DEPLOY IN HEROKU:
+
+LINKS: 
+https://medium.com/@hellotunmbi/how-to-deploy-angular-application-to-heroku-1d56e09c5147
+https://medium.com/@babubhai/how-to-deploy-angular-6-app-to-heroku-52b73ac7a3aa
+
+>> npm install express path --save
+
+configure package.json:
+
+In "scripts": 
+ "postinstall": "ng build --aot -prod"
+
+ change
+ "start": "node server.js",
+
+In "engines":
+"engines": {
+    "node": "8.11.3",
+    "npm": "5.6.0"
+  },
+
+Move typescript from devDependencies to dependencies:
+"typescript": "~2.7.2",
+
+- Create server.js in root and replace the content with
+//Install express server
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+// Serve only the static files form the dist directory
+app.use(express.static(__dirname + '/dist/ng6-proj'));
+
+app.get('/*', function(req,res) {
+    
+res.sendFile(path.join(__dirname+'/dist/ng6-proj/index.html'));
+});
+
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
+
+==============================================
