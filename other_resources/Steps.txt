@@ -37,3 +37,23 @@ https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-thi
 (follow the tutorial for DataService, HTTP, RxJS, ActivatedRoute, Class Binding)
 
 >> npm install @angular/animations@latest --save
+
+==============================================================
+>> git remote add origin https://github.com/Naveen7892/ng6-proj.git
+
+>> git push -u origin master
+
+go to github repo > settings > options > Github pages > choose master branch /docs folder and click save.
+
+>> ng build
+project will be built in dist folder of root directory
+
+>> mkdir docs
+
+>> git add .
+
+>> git commit -m "Docs folder for Github page is created"
+
+>> git push -u origin master
+
+===============================================================
