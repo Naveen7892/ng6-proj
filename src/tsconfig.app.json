@@ -7,5 +7,7 @@
   "exclude": [
     "src/test.ts",
     "**/*.spec.ts"
-  ]
+  ],
+  // to fix error: ng build --prod
+  "paths": { "@angular/*": ["../node_modules/@angular/*"] },
 }
