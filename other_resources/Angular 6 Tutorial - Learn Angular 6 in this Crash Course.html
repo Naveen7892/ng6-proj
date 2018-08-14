@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://coursetro.com/posts/code/154/Angular-6-Tutorial-%2D-Learn-Angular-6-in-this-Crash-Course -->
+<html class="no-js" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Angular 6 Tutorial - Learn Angular 6 in this Crash Course</title>
+
+	    <meta name="keywords" content="angular 6 tutorial, learn angular 6, angular 6 apps">
+	    <meta name="description" content="Welcome! In this crash course, you&#39;re going to learn about the core fundamentals of Angular 6 while building an actual app! It&#39;s provided in both written and video format.">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="csrf-token" value="9ocTPOsg9GYHAKfLbRBXruNBOLOT69ddaCfIzFkF">
+
+
+
+        <link media="all" type="text/css" rel="stylesheet" href="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/app.css">
+
+        
+        <link media="all" type="text/css" rel="stylesheet" href="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/courseview.css">
+
+        <link media="all" type="text/css" rel="stylesheet" href="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/posts.css">
+
+        <link media="all" type="text/css" rel="stylesheet" href="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/prism.css">
+
+        <script async="" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/analytics.js.download"></script><script id="facebook-jssdk" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/all.js.download"></script><script src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/prism.js.download"></script>
+
+<script src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/jquery.min.js.download"></script>
+    <meta property="og:url" content="https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Angular 6 Tutorial - Learn Angular 6 in this Crash Course">
+    <meta property="og:description" content="Welcome! In this crash course, you&#39;re going to learn about the core fundamentals of Angular 6 while building an actual app! It&#39;s provided in both written and video format.">
+    <meta property="og:image" content="https://coursetro.com/images/post-code.png">
+
+    <script src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/embed.js.download" data-timestamp="1534229282098"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:-webkit-sticky;top:0}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in_v1{animation-duration:250ms;animation-name:fb_bounce_in_v1}.fb_customer_chat_bounce_out_v1{animation-duration:250ms;animation-name:fb_bounce_out_v1}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v1{0%{opacity:0;transform:scale(.8, .8);transform-origin:bottom right}80%{opacity:.8;transform:scale(1.03, 1.03)}100%{opacity:1;transform:scale(1, 1)}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v1{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style><script type="text/javascript" charset="utf-8" async="" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/button.0cb9151550e202c51f74aa69f27a9a61.js.download"></script><link rel="preload" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.fda8427fde61b6f55d19bcd47d8c54b0.css"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.e63a160a6bfb2f2953b5059c50baaf15.js"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.f6d12e211bd8f85dd9d07100661ee6ab.js"><link rel="preload" as="script" href="https://disqus.com/next/config.js"><script src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/alfie.f51946af45e0b561c60f768335c9eb79.js.download" async="" charset="UTF-8"></script></head>
+    <body>
+<!-- Load BSA FancyBar -->
+<script async="" type="text/javascript" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/fancybar.js.download" id="_fancybar_js"></script>
+
+
+        <!-- BuySellAds Ad Code -->
+
+<!-- End BuySellAds Ad Code -->    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/QX17B8fU-Vm.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <div id="homebg">
+        <div class="row header">
+        <a name="lgn">
+            </a><div class="medium-3 columns"><a name="lgn">
+                </a><a href="https://coursetro.com/" class="logo"><img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/logo-new.svg"></a>
+            </div>
+            <div class="columns">
+                <a href="https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course#" id="toggleMenu"><img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/menu.png"></a>
+                <ul id="main-nav" class="hide-tablet">
+                    <li id="menuOut"><img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/menu-x.png"></li>
+                    <li><a href="https://coursetro.com/">home</a></li>
+                    <li><a href="https://coursetro.com/courses">courses</a></li>
+                    <li><a href="https://coursetro.com/posts">tutorials</a></li>
+                                            <li><a href="https://coursetro.com/auth/login">login</a></li>
+                        <li><a href="https://coursetro.com/join">join pro</a></li>
+                                                                                <li><a href="https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course#" id="search"><img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/search.png"></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div id="join-form">
+<div class="join-overlay"></div>
+
+<form method="POST" action="https://coursetro.com/" accept-charset="UTF-8"><input name="_token" type="hidden" value="9ocTPOsg9GYHAKfLbRBXruNBOLOT69ddaCfIzFkF">
+
+
+<div class="form-contain">
+
+<a href="https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course#" id="exit-join"><img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/exit.png"></a>
+
+	<h2>Create your account</h2>
+
+	<p class="lgnhere">Already have an account? <a href="https://coursetro.com/auth/login">Login here</a>	
+
+	</p><div class="response"></div>
+
+
+
+	  <div class="row">
+	    <div class="columns small-12 large-expand">
+
+			<label for="first_name">First Name</label>
+			<input class="form-control" id="first_name" name="first_name" type="text">
+		</div>
+		<div class="columns small-12 large-expand">
+			<label for="last_name">Last Name</label>
+			<input class="form-control" id="last_name" name="last_name" type="text">
+		</div>
+	</div>
+
+    <label for="email" id="emailLabel">Email Address</label>
+    <input class="form-control" id="email" name="email" type="text">
+
+
+	<p id="note"><strong>Note:</strong> By joining, you will receive periodic emails from Coursetro. You can unsubscribe from these emails.</p>
+
+    <a href="https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course#" class="send-btn btn-style submit-btn" id="overlay-submit">Create account</a>
+</div>
+
+</form>
+
+</div>    </div>
+
+    <div id="search-container">
+	            	<form method="POST" action="https://coursetro.com/search" accept-charset="UTF-8"><input name="_token" type="hidden" value="9ocTPOsg9GYHAKfLbRBXruNBOLOT69ddaCfIzFkF">
+					<input name="_token" type="hidden" value="9ocTPOsg9GYHAKfLbRBXruNBOLOT69ddaCfIzFkF">
+                <div class="row">
+                    <div class="medium-9 small-12 columns">
+                        <input class="form-control" id="search-ctrl" placeholder="Search here.." name="search" type="text">
+                    </div>
+                    <div class="medium-3 small-12 columns" id="search-btn">
+                        <input type="submit" value="Search">
+                    </div>
+                </div>
+            </form>
+        </div>
+    <div class="row courseinfo columns">
+    
+        <!-- BuySellAds Zone Code -->
+<div class="leaderalignc">
+<script async="" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/f.txt"></script>
+<!-- Top Leaderboard -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0773983979886271" data-ad-slot="3897304223" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- End BuySellAds Zone Code -->
+
+    
+        
+    <h1>Angular 6 Tutorial - Learn Angular 6 in this Crash Course</h1>
+    <p id="postheaderauth">By Gary simon - May 31, 2018</p>
+
+    </div>
+
+
+
+    <div class="row" id="postcontent">
+        <div class="columns large-9 small-12">
+            
+    <img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/154-full.png" class="post-img-full">
+
+            <div class="inner-content">
+                
+    
+    <p>Angular 6 has been out for a few weeks, so it's time to rehash my popular fundamentals series on Angular! This little crash course / tutorial for you if you have never worked with Angular 2+ before.</p>
+<p>The difference between Angular 2-6 isn't massive if we're talking about the core fundamentals, but AngularJS (1.0) certainly is!</p>
+<p>In this tutorial, I'm going to teach you <strong>by example</strong>, while discussing how things work and why they work.&nbsp;</p>
+<p>Our app will fetch data from a mock API service and display it in a beautiful UI.</p>
+<p>You're going to learn how to:</p>
+<ul>
+<li>Install Angular 6 with the Angular CLI</li>
+<li>Understand and Create Components</li>
+<li>Understand and Create Services</li>
+<li>Working with HTML &amp; CSS in Angular 6</li>
+<li>Working with Angular 6 Routing</li>
+<li>Working with the Angular 6 HTTP Client</li>
+</ul>
+<p>Let's get started!</p>
+<div class="in-add"><script async="" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/f.txt"></script>
+<!-- In-Content Ad -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0773983979886271" data-ad-slot="3149669428" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div><div class="suggested_courses">
+
+				<div class="post-container halfhalf ">
+					<a href="https://coursetro.com/courses/19/Learn-Angular-5-from-Scratch---Angular-5-Tutorial?utm_source=in_article&amp;utm_campaign=article&amp;utm_medium=Learn+Angular+5+from+Scra" class="post-title">
+
+					<img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/19_thumb.jpg">
+
+					<div class="white-container">
+						<span class="post-title">Learn Angular 5 from Scratch - Angular 5 Tutorial</span>
+					</div>
+				</a>
+				</div>
+				
+
+				<div class="post-container halfhalf ">
+					<a href="https://coursetro.com/courses/18/Build-a-Beautiful-CryptoCurrency-App-using-Ionic-3?utm_source=in_article&amp;utm_campaign=article&amp;utm_medium=Build+a+Beautiful+CryptoC" class="post-title">
+
+					<img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/18_thumb.jpg">
+
+					<div class="white-container">
+						<span class="post-title">Build a Beautiful CryptoCurrency App using Ionic 3</span>
+					</div>
+				</a>
+				</div>
+				
+
+				<div class="post-container halfhalf ">
+					<a href="https://coursetro.com/courses/13/Create-a-MEAN-App-Called-CodePost---Full-Stack?utm_source=in_article&amp;utm_campaign=article&amp;utm_medium=Create+a+MEAN+App+Called+" class="post-title">
+
+					<img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/13_thumb.jpg">
+
+					<div class="white-container">
+						<span class="post-title">Create a MEAN App Called CodePost - Full Stack</span>
+					</div>
+				</a>
+				</div>
+				
+
+				<div class="post-container halfhalf ">
+					<a href="https://coursetro.com/courses/12/Learn-Angular-4-from-Scratch?utm_source=in_article&amp;utm_campaign=article&amp;utm_medium=Learn+Angular+4+from+Scra" class="post-title">
+
+					<img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/12_thumb.jpg">
+
+					<div class="white-container">
+						<span class="post-title">Learn Angular 4 from Scratch</span>
+					</div>
+				</a>
+				</div>
+				
+
+				<div class="post-container halfhalf ">
+					<a href="https://coursetro.com/courses/10/Create-a-Personal-Portfolio-using-Angular-2-&amp;-Behance?utm_source=in_article&amp;utm_campaign=article&amp;utm_medium=Create+a+Personal+Portfol" class="post-title">
+
+					<img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/10_thumb.jpg">
+
+					<div class="white-container">
+						<span class="post-title">Create a Personal Portfolio using Angular 2 &amp; Behance</span>
+					</div>
+				</a>
+				</div>
+				</div><div class="inner-content"><h2>If you prefer watching a video..</h2>
+<p>Be sure to&nbsp;<a href="http://youtube.com/user/designcourse">Subscribe to the Official Coursetro Youtube Channel</a>&nbsp;for more videos.</p>
+<div class="videoWrapper"><iframe src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/z4JUm0Bq9AM.html" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div><div class="inner-content"><h2>How to Install Angular 6</h2>
+<p>The quickest and easiest way of starting an Angular 6 app is through the Angular CLI (Command Line Interface).&nbsp;</p>
+<p>To install it, you're going to need either the yarn package manager or the node package manager. To check whether or not you have npm, in your console / command line, type:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; npm -v</code></pre>
+<p>If this goes unrecognized (and not a version number), you need to install <a href="https://nodejs.org/en/download/">NodeJS</a>. Once you install NodeJS, reload your console or command line and you will have access to NPM.</p>
+<p>Now, we can use NPM to install the Angular CLI. The Angular CLI has an official <a href="https://cli.angular.io/">website located here</a>.</p>
+<p>To install it:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; npm install -g @angular/cli</code></pre>
+<p>If you run <em>ng -v</em>&nbsp;after installing, it will provide you with the version number. Mine happens to be <em>6.0.7</em>.</p>
+<p>Once the CLI is installed, we can now use it to start a install a brand new Angular 6 project:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; ng new ng6-proj --style=scss --routing</code></pre>
+<ul>
+<li><strong>ng</strong>&nbsp;- This is how we call the Angular CLI.</li>
+<li><strong>new</strong>&nbsp;- This is one of the many commands we can issue to the CLI.</li>
+<li><strong>ng6-proj</strong>&nbsp;is simply the name that we're calling our project. The CLI will create a folder with this name, based on where you're running this command.</li>
+<li><strong>Optional flags</strong>&nbsp;- Next are two optional flags that I decided to add. First, we're telling the CLI to generate a project that has Sass enabled (by default, CSS is used if this is not specified), and then <em>--routing</em>&nbsp;is added because we want a project that has different page URL's, and adding this flag will help create a routing file for us.</li>
+</ul>
+<p>To check out all of the available commands and options, run <strong>ng</strong>&nbsp;at the command line.</p>
+<p>Once the CLI has generated the new project, you can hop into it:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; cd ng6-proj</code></pre>
+<p>If you use Visual Studio Code, you can type <em>code .</em>&nbsp;to launch the code editor. Then, to serve the project to the browser, you run:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; ng serve -o</code></pre>
+<p>The -o flag tells the CLI to launch your browser with the project. Now, you're able to watch your Angular 6 project as you code and it will automatically live reload. Awesome!</p>
+</div><div class="inner-content"><h2>Angular 6 Project Structure</h2>
+<p>This is a beginner's tutorial, so we're not going to do a deep dive into every file. All that's important for you to understand are the absolute basics.</p>
+<p>When you view the folder and file structure of your Angular 6 app, it should look something similar to this:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; e2e
+&gt; node_modules
+&gt; src
+  &gt; app
+    ...a bunch of files
+...a bunch of files</code></pre>
+<p>You're going to spend most of your time working within the <strong>/src/app</strong>&nbsp;folder. This is where components and services are stored (we'll get to those shortly).&nbsp;</p>
+<p>In the <strong>/src/</strong>&nbsp;folder itself, you will see an <em>index.html</em>&nbsp;(the apps entry point) and a <em>styles.css</em>&nbsp;file, which is where any global CSS rulesets are placed.</p>
+<p>The <strong>/src/assets</strong>&nbsp;folder is where you place any assets such as graphics.</p>
+<p>Not present right now is a <strong>/dist/</strong>&nbsp;folder, which is generated when you build the project, which we'll do later on.</p>
+</div><div class="inner-content"><h2>The Angular 6 Module File</h2>
+<p>Before we tackle components, it's worth looking at the <strong>/src/app/app.module.ts</strong>&nbsp;file. Oh, and by the way, what is that <strong>.ts</strong>&nbsp;extension? It stands for TypeScript, and Angular 6 uses TypeScript. In short, TypeScript provides strong type checking on JavaScript.&nbsp;</p>
+<p>The <strong>app.module.ts</strong>&nbsp;file looks like this:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> BrowserModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/platform-browser'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> NgModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> AppRoutingModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./app-routing.module'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> AppComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./app.component'</span><span class="token punctuation">;</span>
+
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  declarations<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    AppComponent
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    BrowserModule<span class="token punctuation">,</span>
+    AppRoutingModule
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  providers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  bootstrap<span class="token punctuation">:</span> <span class="token punctuation">[</span>AppComponent<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">AppModule</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span></code></pre>
+<p>Whenever you use the CLI to generate components and services, it will automatically update this file to import and add them to the <em>@NgModule</em>&nbsp;decorator. Components are added to the <em>declarations</em>&nbsp;array, and services are added as <em>providers</em>. You will also find yourself adding various imports to the <em>imports</em>&nbsp;array. For instance, when we want to add animations, we will add them here.</p>
+<p>If you're a little confused at this point, don't worry. Just understand that this is an important file that you will need to visit routinely. The CLI will take care of things for the most part, especially when generating components, but when generating services and performing some other tasks, you will need to visit this file. You'll see as a proceed.</p>
+</div><div class="inner-content"><h2>Angular 6 Components Tutorial</h2>
+<p>A component in Angular 6 provides you with the basic building blocks of your Angular app. When we used the Angular CLI to generate our project, it created a single component.</p>
+<p>When you use the CLI to generate components, it creates 4 files:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; src
+  &gt; app
+    app.component.html
+    app.component.scss (or .css)
+    app.component.spec.ts
+    app.component.ts</code></pre>
+<ul>
+<li>The HTML file is the HTML template associated with that component.</li>
+<li>The SCSS or CSS is the associated CSS rulesets for that component (whatever is defined in the HTML file)</li>
+<li>The <em>.spec.ts</em>&nbsp;file is for testing purposes.</li>
+<li>The <em>.ts</em>&nbsp;file is the actual component file, and it's where you will likely spend most of your time. It defines a number of things.</li>
+</ul>
+<p>Open up the <strong>app.component.ts</strong>&nbsp;file:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  selector<span class="token punctuation">:</span> <span class="token string">'app-root'</span><span class="token punctuation">,</span>
+  templateUrl<span class="token punctuation">:</span> <span class="token string">'./app.component.html'</span><span class="token punctuation">,</span>
+  styleUrls<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'./app.component.scss'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">AppComponent</span> <span class="token punctuation">{</span>
+  title <span class="token operator">=</span> <span class="token string">'app'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>At the top, we have our imports. You will import other components here, along with service files. We'll do that a little later.</p>
+<p>The <em>@Component</em>&nbsp;decorator is an object with associated property / value pairs that defines important stuff associated with this component. For instance, you will see <strong>selector: 'app-root'</strong>&nbsp;- This provides this component with a unique identifier that is used in other areas of the app. You can also see <em>templateUrl</em>&nbsp;and <em>styleUrls</em>, which tells Angular where this component's HTML and CSS files are located. There are other properties that can be added here, such as animations, but we'll get to that later.</p>
+<p>Finally, we have the logic section of the component file. This is where properties (we see that <em>title</em>&nbsp;was defined by the CLI), dependency injection and methods are defined.</p>
+<p>Now that you understand the very basics of a component, let's create a few of our own!</p>
+<p>In the console, run:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; ng generate component sidebar
+CREATE src/app/sidebar/sidebar.component.html (26 bytes)
+CREATE src/app/sidebar/sidebar.component.spec.ts (635 bytes)
+CREATE src/app/sidebar/sidebar.component.ts (274 bytes)
+CREATE src/app/sidebar/sidebar.component.scss (0 bytes)
+UPDATE src/app/app.module.ts (479 bytes)</code></pre>
+<p>Here, we've told the CLI to <strong>generate</strong>&nbsp;a <strong>component</strong>&nbsp;with the name of <strong>sidebar</strong>. It outputs the 4 files it created, along with the app module file it updated!</p>
+<p>Let's generate a few more components. Run the following commands to generate 3 more components:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; ng g c posts
+&gt; ng g c users
+&gt; ng g c details</code></pre>
+<p>Now, you should have a total of 5 components, 4 of which we just created ourselves. Shortly, you'll see how all of these start to work with each other and in relation to the app.</p>
+</div><div class="inner-content"><h2>Angular 6 Templating</h2>
+<p>Let's say for instance that we want our particular app to have a sidebar with some icons. This sidebar will always be present in the app. The <strong>sidebar</strong>&nbsp;component is something we already generated with the CLI.</p>
+<p>Open the <strong>src/app/app.component.html</strong>&nbsp;file. You will see all of the boilerplate HTML the CLI generated, and consequently, what you see in the browser for the time being. Remove all of that and paste this (or better yet, type it!):</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-sidebar</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-sidebar</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-outlet</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-outlet</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>We've wrapped everything in a <strong>container</strong>&nbsp;id. Then, you will notice a custom HTML element called <strong>app-sidebar</strong>. What's that?</p>
+<p>Well, when the CLI generated the <em>sidebar</em>&nbsp;component, it made the component's <em>selector</em>&nbsp;value <em>app-sidebar</em>. Don't believe me? Check out <strong>/src/app/sidebar/sidebar.component.ts</strong>&nbsp;-- It's right there in the component decorator! That's how you embed a component inside of another component. Now, anything defined in that component's HTML, will be displayed where <em>&lt;app-sidebar&gt;&lt;/app-sidebar&gt;</em>&nbsp;is defined.</p>
+<p>Another very important element is the <strong>router-outlet</strong>. This was added by the CLI when we added the <em>--routing</em>&nbsp;flag (it also generated a routing file in <em>/src/app</em>.</p>
+<p>This element defines where any components defined by their routes will be displayed.</p>
+<p>Let's head over to the&nbsp;<strong>/src/app/sidebar/sidebar.component.html</strong>&nbsp;file to define the sidebar templating:</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">routerLink</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>material-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>supervised_user_circle<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">routerLink</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>posts<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>material-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>message<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>You will notice <em>routerLink=</em>&nbsp;here. Instead of <em>href</em>, we use <em>routerLink</em>&nbsp;to direct the user to different routes. Right now, this will not work though, we'll get to that during the routing section.</p>
+<p>We're also going to use <a href="https://material.io/tools/icons/?style=baseline">Material Icons</a>, so we need to import that first.&nbsp;</p>
+<p>Save this file and open up <strong>/src/index.html</strong>&nbsp;and add the following 2 lines between the <em>&lt;head&gt;</em>&nbsp;tags:</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/icon?family<span class="token punctuation">=</span>Material+Icons<span class="token punctuation">"</span></span>
+      <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css?family<span class="token punctuation">=</span>Montserrat:300,700<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>We're importing material icons first, and then a Google web font called Montserrat.</p>
+</div><div class="inner-content"><h2>Angular 6 CSS</h2>
+<p>Let's add some CSS rulesets to make our app look better. First, open up <strong>/src/styles.css</strong>. Any CSS/Sass defined here will apply to the HTML templating of all components, while component-specific CSS files only apply to that component's HTML template.</p>
+<p>Add the following rulesets:</p>
+<pre class=" language-css"><code class=" language-css"><span class="token comment" spellcheck="true">/* You can add global styles to this file, and also import other style files */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+     <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+     <span class="token property">background</span><span class="token punctuation">:</span> #F2F2F2<span class="token punctuation">;</span>
+     <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Montserrat'</span>, sans-serif<span class="token punctuation">;</span>
+     <span class="token property">height</span><span class="token punctuation">:</span> 100vh<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#container</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+    <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 70px auto<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token selector">;
+
+    #content</span> <span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> 30px 50px<span class="token selector">;
+
+        ul</span> <span class="token punctuation">{</span>
+            <span class="token property">list-style-type</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span><span class="token property">padding</span><span class="token punctuation">:</span>0<span class="token selector">;
+        
+            li</span> <span class="token punctuation">{</span>
+                <span class="token property">background</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+                <span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+                <span class="token property">padding</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+                <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 8px<span class="token selector">;
+        
+                a</span> <span class="token punctuation">{</span>
+                    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.5em<span class="token punctuation">;</span>
+                    <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+                    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+                    <span class="token property">color</span><span class="token punctuation">:</span>#00A8FF<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+        
+                <span class="token selector">ul</span> <span class="token punctuation">{</span>
+                    <span class="token property">margin-top</span><span class="token punctuation">:</span> 20px<span class="token selector">;
+                    
+                    li</span> <span class="token punctuation">{</span>
+                        <span class="token property">padding</span><span class="token punctuation">:</span>0<span class="token selector">;
+        
+                        a</span> <span class="token punctuation">{</span>
+                            <span class="token property">font-size</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+                            <span class="token property">font-weight</span><span class="token punctuation">:</span> 300<span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>This is a little lengthy because I don't want to keep revisiting this file. The rulesets here are applying to some elements that we haven't yet defined. Nothing too exciting is happening here though, just some standard Sass/CSS.</p>
+<p>Next, open up the sidebar CSS file <strong>/src/app/sidebar/sidebar.component.scss</strong>:</p>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">nav</span> <span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #2D2E2E<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token selector">;
+
+    ul</span> <span class="token punctuation">{</span>
+        <span class="token property">list-style-type</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token selector">;
+
+        li</span> <span class="token punctuation">{</span>
+
+            <span class="token selector">a</span> <span class="token punctuation">{</span>
+                <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+                <span class="token property">padding</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+                <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token selector">.activated</span> <span class="token punctuation">{</span>
+                <span class="token property">background-color</span><span class="token punctuation">:</span> #00a8ff<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    
+<span class="token punctuation">}</span></code></pre>
+<p>Great. View your browser and the result should look like this:</p>
+<p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/1-1527783596590.png"></p>
+</div><div class="inner-content"><h2>Angular 6 Routing Tutorial</h2>
+<p>Now, let's make our 2 icons work when they're clicked. In order to do that, we need to visit the <strong>/src/app/app-routing.module.ts</strong>&nbsp;file.</p>
+<p>This is what it looks like:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> NgModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Routes<span class="token punctuation">,</span> RouterModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/router'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> routes<span class="token punctuation">:</span> Routes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>RouterModule<span class="token punctuation">.</span><span class="token function">forRoot</span><span class="token punctuation">(</span>routes<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  exports<span class="token punctuation">:</span> <span class="token punctuation">[</span>RouterModule<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">AppRoutingModule</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span></code></pre>
+<p>We need to import our components at the top, and add them to the <em>Routes</em>&nbsp;array shown on line 4 above.</p>
+<p>To do that, add the following:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> NgModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Routes<span class="token punctuation">,</span> RouterModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/router'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> UsersComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./users/users.component'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> DetailsComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./details/details.component'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> PostsComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./posts/posts.component'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> routes<span class="token punctuation">:</span> Routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    component<span class="token punctuation">:</span> UsersComponent
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token punctuation">:</span> <span class="token string">'details/:id'</span><span class="token punctuation">,</span>
+    component<span class="token punctuation">:</span> DetailsComponent
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token punctuation">:</span> <span class="token string">'posts'</span><span class="token punctuation">,</span>
+    component<span class="token punctuation">:</span> PostsComponent
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<p>We've imported our 3 components, and then defined three objects in the <em>Routes</em>&nbsp;array.</p>
+<p>The first object specifies that the <em>UsersComponent</em>&nbsp;will be the default component that loads on the root path. We leave the path value empty forthis.</p>
+<p>The next route is for a user details section. We've specified a wildcard named <em>id</em>. We'll use this to fetch that value from the router in order to retrieve the correct user details.</p>
+<p>Then another route for a component and path called posts.</p>
+<p>Save this file, and the browser should now show:</p>
+<p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/2-1527783929626.png"></p>
+<p>Awesome!</p>
+</div><div class="inner-content"><h2>Angular 6 Services</h2>
+<p>For our users component, we want to fetch a list of users from a public API. To do that, we're going to use the Angular CLI to generate a service for us.&nbsp;</p>
+<p>An Angular 6 service is useful placing code that's reusable throughout your app's different components.</p>
+<p>In the console, type:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; ng generate service data</code></pre>
+<p>Open up the new service file: <strong>/src/app/data.service.ts</strong>:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Injectable <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+
+@<span class="token function">Injectable</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  providedIn<span class="token punctuation">:</span> <span class="token string">'root'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">DataService</span> <span class="token punctuation">{</span>
+
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>It looks similar to a regular component, right? You define your imports at the top, and your methods and properties in the class that's exported.</p>
+<p>The purpose of our service file will be to communicate with an API via the Angular 6 HTTP Client.</p>
+</div><div class="inner-content"><h2>Angular 6 HTTP Client</h2>
+<p>Angular comes with a built in HTTPClient. Let's import that at the top of our <strong>data.service.ts</strong>&nbsp;file:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Injectable <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> HttpClient <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/common/http'</span><span class="token punctuation">;</span></code></pre>
+<p>Next, in order to use the HttpClient, we need to create an instance of it through dependency injection within the constructor:</p>
+<pre class=" language-javascript"><code class=" language-javascript">  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> http<span class="token punctuation">:</span> HttpClient<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+  <span class="token function">getUsers</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>http<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'https://jsonplaceholder.typicode.com/users'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<p>We also defined a method called <em>getUsers()</em>&nbsp;which we'll call in our component shortly. It returns a list of users from a public testing API.</p>
+<p>Before we can use the HTTPClient, we need to add as an import in our app's <strong>/src/app/app.module.ts</strong>&nbsp;file:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token comment" spellcheck="true">// Other imports removed for brevity</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> HttpClientModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/common/http'</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// &lt;-Add here</span>
+
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  declarations<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token comment" spellcheck="true">// Removed for brevity</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    BrowserModule<span class="token punctuation">,</span>
+    AppRoutingModule<span class="token punctuation">,</span>
+    HttpClientModule<span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">// &lt;-Add here</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  providers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  bootstrap<span class="token punctuation">:</span> <span class="token punctuation">[</span>AppComponent<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>Great!</p>
+<p>Next, let's open up the <strong>/src/app/users/users.component.ts</strong>&nbsp;file and import our service:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> OnInit <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> DataService <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../data.service'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Observable <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'rxjs'</span><span class="token punctuation">;</span></code></pre>
+<p>To display the results, we're going to use an Observable, so we're importing it here, too.&nbsp;</p>
+<p>In the class, add:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UsersComponent</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span> <span class="token punctuation">{</span>
+
+  users$<span class="token punctuation">:</span> Object<span class="token punctuation">;</span>
+  
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> data<span class="token punctuation">:</span> DataService<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+  <span class="token function">ngOnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span><span class="token function">getUsers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>
+      data <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>users$ <span class="token operator">=</span> data 
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre>
+<p>In the constructor, we're creating an instance of our service. Then, within the lifecycle hook <em>ngOnInit()</em>&nbsp;(this runs when the component loads), we're calling our <em>getUsers()</em>&nbsp;method and subscribing to it. Inside, we're binding our <em>users$</em>&nbsp;object to the result returned by the API.</p>
+<p>Next, open up <strong>/src/app/users/users.component.html</strong>:</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Users<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">*ngFor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>let user of users$<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">routerLink</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/details/{{user.id}}<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>{{ user.name }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>{{ user.email }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://{{ user.website }}<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>{{ user.website }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Whenever you wish to iterate over an array or array of objects, you use the Angular directive *<strong>ngFor</strong>. We then use interpolation brackets to call upon the properties of the returned object to display them in the browser!</p>
+<p>If you save this and refresh, you should now see a list of users and their information:</p>
+<p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/3-1527785324850.png"></p>
+</div><div class="inner-content"><h2>Fetching More Data from the API</h2>
+<p>Let's revisit the service file <strong>/src/app/data.service.ts</strong>&nbsp;and add the following methods:</p>
+<pre class=" language-javascript"><code class=" language-javascript">  <span class="token function">getUser</span><span class="token punctuation">(</span>userId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>http<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'https://jsonplaceholder.typicode.com/users/'</span><span class="token operator">+</span>userId<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getPosts</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>http<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'https://jsonplaceholder.typicode.com/posts'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span></code></pre>
+<p>The <em>getUser()</em>&nbsp;method will provide us with a single user's information, which will accept a <em>userId</em>&nbsp;as a parameter.</p>
+<p><em>getPosts()</em>&nbsp;will fetch some fictional posts for us to get more muscle memory with this process of communicating with services.</p>
+<p>Visit <strong>/src/app/details/details.component.ts</strong>:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> OnInit <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> DataService <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../data.service'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Observable <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'rxjs'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ActivatedRoute <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@angular/router"</span><span class="token punctuation">;</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  selector<span class="token punctuation">:</span> <span class="token string">'app-details'</span><span class="token punctuation">,</span>
+  templateUrl<span class="token punctuation">:</span> <span class="token string">'./details.component.html'</span><span class="token punctuation">,</span>
+  styleUrls<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'./details.component.scss'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">DetailsComponent</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span> <span class="token punctuation">{</span>
+
+  user$<span class="token punctuation">:</span> Object<span class="token punctuation">;</span>
+  
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> route<span class="token punctuation">:</span> ActivatedRoute<span class="token punctuation">,</span> <span class="token keyword">private</span> data<span class="token punctuation">:</span> DataService<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+     <span class="token keyword">this</span><span class="token punctuation">.</span>route<span class="token punctuation">.</span>params<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span> params <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>user$ <span class="token operator">=</span> params<span class="token punctuation">.</span>id <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">ngOnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>user$<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>
+      data <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>user$ <span class="token operator">=</span> data 
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre>
+<p>This, as you see, is very similar to our <em>users</em>&nbsp;component.&nbsp;The only difference comes when we import <em>ActivatedRoute</em>&nbsp;and call it within the constructor.</p>
+<p>The purpose of this code allows us to grab the <em>id</em>&nbsp;router parameter that we defined in the app's routing file earlier. This will give us access to the user ID and then pass it to the <em>getUser()</em>&nbsp;method that we defined.</p>
+<p>Open up the <strong>details.component.html</strong>&nbsp;and specify:</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>{{ user$.name }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Username:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span> {{ user$.username }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Email:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span> {{ user$.email }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Phone:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span> {{ user$.phone }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>Save it, and click on one of the user's names:</p>
+<p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/4-1527786251261.png"></p>
+<p>Awesome!</p>
+<p>For more muscle memory, let's repeat this process for the <strong>/src/app/posts/posts.component.ts</strong>&nbsp;file:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> OnInit <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> DataService <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../data.service'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Observable <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'rxjs'</span><span class="token punctuation">;</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  selector<span class="token punctuation">:</span> <span class="token string">'app-posts'</span><span class="token punctuation">,</span>
+  templateUrl<span class="token punctuation">:</span> <span class="token string">'./posts.component.html'</span><span class="token punctuation">,</span>
+  styleUrls<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'./posts.component.scss'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">PostsComponent</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span> <span class="token punctuation">{</span>
+  posts$<span class="token punctuation">:</span> Object<span class="token punctuation">;</span>
+  
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> data<span class="token punctuation">:</span> DataService<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+  <span class="token function">ngOnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span><span class="token function">getPosts</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>
+      data <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>posts$ <span class="token operator">=</span> data 
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre>
+<p>And the <strong>posts.component.html</strong>&nbsp;file:</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Posts<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">*ngFor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>let post of posts$<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">routerLink</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>{{ post.title }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>{{ post.body }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Save it, and click on the posts icon in the sidebar:</p>
+<p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/5-1527786384870.png"></p>
+<p>Great!</p>
+</div><div class="inner-content"><h2>Angular 6 Class Binding</h2>
+<p>It would be nice to indicate which page a user is currently on in the left sidebar, perhaps by adding a class to the icon that will make its' background blue? Sure!</p>
+<p>Visit the <strong>/src/app/sidebar/sidebar.component.ts</strong>&nbsp;file and add&nbsp;the following:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> OnInit <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Router<span class="token punctuation">,</span> NavigationEnd <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/router'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">SidebarComponent</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span> <span class="token punctuation">{</span>
+
+  currentUrl<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token keyword">private</span> router<span class="token punctuation">:</span> Router<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    router<span class="token punctuation">.</span>events<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span><span class="token punctuation">(</span>_<span class="token punctuation">:</span> NavigationEnd<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>currentUrl <span class="token operator">=</span> _<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">ngOnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>We're importing the Router and NavigationEnd, then defining a string property <em>currentUrl</em>. Then, we create an instance of the Router in order to subscribe to <em>router.events</em>. It will provide us with a string, which is the current router path.</p>
+<p>Open the <strong>sidebar.component.html</strong>&nbsp;file and update it to match:</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">routerLink</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">[class.activated]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currentUrl <span class="token punctuation">=</span><span class="token punctuation">=</span> <span class="token punctuation">'</span>/<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>material-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>supervised_user_circle<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">routerLink</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>posts<span class="token punctuation">"</span></span> <span class="token attr-name">[class.activated]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currentUrl <span class="token punctuation">=</span><span class="token punctuation">=</span> <span class="token punctuation">'</span>/posts<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>material-icons<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>message<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>Class binding works by binding <em>[class.csspropertyname]</em>&nbsp;to a template expression. It will only add the <em>.activated</em>&nbsp;CSS ruleset (defined in <em>styles.scss</em>) if our <em>currentUrl</em>&nbsp;is equal to either <em>/</em>&nbsp;or <em>/posts</em>.</p>
+<p>Save it. The result should now look like this:</p>
+<p><img style="display: block; margin: 0 auto; text-align: center; max-width: 100%;" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/6-1527786930208.png"></p>
+<p>Try clicking on the other icon!</p>
+</div><div class="inner-content"><h2>Angular 6 Animation Tutorial</h2>
+<p>Let's say for instance that we want our list of user's on the user's page to fade in when the component loads. We can use Angular's powerful animation library to help us achieve this.</p>
+<p>In order to gain access to the animation library, we have to first install it from the console:</p>
+<pre class=" language-markup"><code class=" language-markup">&gt; npm install @angular/animations@latest --save</code></pre>
+<p>Then, we add it to the imports of <strong>/src/app/app.module.ts</strong>:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token comment" spellcheck="true">// Other imports removed for brevity</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> BrowserAnimationsModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/platform-browser/animations'</span><span class="token punctuation">;</span>
+
+@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token comment" spellcheck="true">// other modules removed for brevity</span>
+    BrowserAnimationsModule
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>Next, open up <strong>/src/app/users/users.component.ts</strong>&nbsp;and add the following to the top imports:</p>
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> trigger<span class="token punctuation">,</span>style<span class="token punctuation">,</span>transition<span class="token punctuation">,</span>animate<span class="token punctuation">,</span>keyframes<span class="token punctuation">,</span>query<span class="token punctuation">,</span>stagger <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/animations'</span><span class="token punctuation">;</span></code></pre>
+<p>Then, in the component decorator, add the following animations property with the associated code:</p>
+<pre class=" language-javascript"><code class=" language-javascript">@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  selector<span class="token punctuation">:</span> <span class="token string">'app-users'</span><span class="token punctuation">,</span>
+  templateUrl<span class="token punctuation">:</span> <span class="token string">'./users.component.html'</span><span class="token punctuation">,</span>
+  styleUrls<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'./users.component.scss'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Add this:</span>
+  animations<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token function">trigger</span><span class="token punctuation">(</span><span class="token string">'listStagger'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+      <span class="token function">transition</span><span class="token punctuation">(</span><span class="token string">'* &lt;=&gt; *'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+        <span class="token function">query</span><span class="token punctuation">(</span>
+          <span class="token string">':enter'</span><span class="token punctuation">,</span>
+          <span class="token punctuation">[</span>
+            <span class="token function">style</span><span class="token punctuation">(</span><span class="token punctuation">{</span> opacity<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> transform<span class="token punctuation">:</span> <span class="token string">'translateY(-15px)'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token function">stagger</span><span class="token punctuation">(</span>
+              <span class="token string">'50ms'</span><span class="token punctuation">,</span>
+              <span class="token function">animate</span><span class="token punctuation">(</span>
+                <span class="token string">'550ms ease-out'</span><span class="token punctuation">,</span>
+                <span class="token function">style</span><span class="token punctuation">(</span><span class="token punctuation">{</span> opacity<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> transform<span class="token punctuation">:</span> <span class="token string">'translateY(0px)'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">)</span>
+            <span class="token punctuation">)</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> optional<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">query</span><span class="token punctuation">(</span><span class="token string">':leave'</span><span class="token punctuation">,</span> <span class="token function">animate</span><span class="token punctuation">(</span><span class="token string">'50ms'</span><span class="token punctuation">,</span> <span class="token function">style</span><span class="token punctuation">(</span><span class="token punctuation">{</span> opacity<span class="token punctuation">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          optional<span class="token punctuation">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>Whew, a lot happening here!&nbsp;</p>
+<ul>
+<li>We start off by defining an animation by giving it a trigger with a name <em>listStagger</em>.</li>
+<li>Next, we use <em>transition</em>&nbsp;to define when the animations will take place, from one animation state to the other. A wildcard is used to say from any state to any state, in this case.</li>
+<li>Then, we use <em>query</em>&nbsp;to say that on <em>:enter</em>, we apply an initial style that's hidden and moved on the Y axis by -15px, and make a stagger animation for each sequential element.&nbsp;</li>
+<li>At the end, we define an optional <em>:leave</em>&nbsp;animation.</li>
+</ul>
+<p>To make this work, visit the <strong>/src/app/users/users.component.html</strong>&nbsp;file and reference the animation trigger:</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">[@listStagger]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>users$<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>Save it, and click on the users icon. You will notice that the list animates in!</p>
+<p>There's a lot more to Angular animation, so this is just one potential use case.</p>
+</div><div class="inner-content"><h2>Conclusion</h2>
+<p>I hope you enjoyed learning about the fundamentals of Angular 6! See you soon.</p>
+<br>
+
+        <!-- Your like button code -->
+    <div class="fb-like fb_iframe_widget" data-href="https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course" data-layout="standard" data-action="like" data-show-faces="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=907&amp;href=https%3A%2F%2Fcoursetro.com%2Fposts%2Fcode%2F154%2FAngular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course&amp;layout=standard&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true"><span style="vertical-align: bottom; width: 450px; height: 20px;"><iframe name="f49a51167386f8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:like Facebook Social Plugin" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/like.html" style="border: none; visibility: visible; width: 450px; height: 20px;" class=""></iframe></span></div>
+
+    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/tweet_button.1025be460f33762a866ea882e1687ff4.en.html"></iframe><script async="" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/widgets.js.download" charset="utf-8"></script>
+
+                <div id="bottom-anchor"></div>
+            </div>
+        </div>
+        <div class="columns large-3 small-12">
+            <div id="sticky-anchor" style="height: 177px;"></div>
+            <div id="sticky" class="stick">
+                
+<!-- BuySellAds Zone Code -->
+<script async="" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/f.txt"></script>
+<!-- Top Right Sidebar (Tutorial Pages) -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-0773983979886271" data-ad-slot="6211642224"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- End BuySellAds Zone Code -->
+                
+                
+    <h4>Share this post</h4>
+    <div id="social-share">
+        <a href="http://www.facebook.com/share.php?u=https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course&amp;title=Angular%206%20Tutorial%20-%20Learn%20Angular%206%20in%20this%20Crash%20Course" onclick="javascript:window.open(this.href,&#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&#39;);return false;"><img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/share-fb.png"></a>
+        <a href="http://twitter.com/share?url=https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course&amp;text=Angular%206%20Tutorial%20-%20Learn%20Angular%206%20in%20this%20Crash%20Course" onclick="javascript:window.open(this.href,&#39;&#39;, &#39;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&#39;);return false;"><img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/share-tw.png"></a>
+    </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+                
+    <br><br><br>
+    <h5>Say something about this awesome post!</h5>
+
+    <div id="disqus_thread"><iframe id="dsq-app9849" name="dsq-app9849" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 8464px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe><iframe id="indicator-north" name="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 1316px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 1316px !important; max-width: 1316px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/saved_resource(1).html"></iframe><iframe id="indicator-south" name="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 1316px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 1316px !important; max-width: 1316px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/saved_resource(2).html"></iframe></div>
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+         */
+
+        var disqus_config = function () {
+            this.page.url = 'https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = "post-154"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() {  // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            
+            s.src = '//coursetro.disqus.com/embed.js';
+            
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+
+
+<script>
+
+function sticky_relocate() {
+    var window_top = $(window).scrollTop();
+    var div_top = $('#sticky-anchor').offset().top;
+    var div_bottom = $('#bottom-anchor').offset().top;
+    var true_bottom = div_bottom - 300;
+    if (window_top > div_top && window_top < true_bottom) {
+        $('#sticky').addClass('stick');
+        $('#sticky-anchor').height($('#sticky').outerHeight());
+
+    } else {
+        $('#sticky').removeClass('stick');
+        $('#sticky-anchor').height(0);
+        
+    }
+}
+
+$(function() {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});
+
+var dir = 1;
+var MIN_TOP = 2000;
+var MAX_TOP = 600;
+
+function autoscroll() {
+    var window_top = $(window).scrollTop() + dir;
+    if (window_top >= MAX_TOP) {
+        window_top = MAX_TOP;
+        dir = -1;
+    } else if (window_top <= MIN_TOP) {
+        window_top = MIN_TOP;
+        dir = 1;
+    }
+    $(window).scrollTop(window_top);
+    window.setTimeout(autoscroll, 100);
+}
+
+</script>
+
+
+    <footer>
+	
+	<div class="row">
+		<div class="columns medium-4 small-12">
+			<a href="https://coursetro.com/" class="logo"><img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/logo.png"></a>
+
+			<ul id="social-footer-nav">
+				<li id="social-nav-fb"><a href="https://www.facebook.com/Coursetro-144614585969651"><img src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/nav-fb.png"></a></li>
+			</ul>
+		</div>
+
+		<div class="columns row medium-8 small-12 flra">
+			
+			<div class="columns medium-4">
+				<ul class="footer-sub-nav">
+                    <li><a href="https://coursetro.com/">home</a></li>
+                    <li><a href="https://coursetro.com/courses">courses</a></li>
+                    <li><a href="https://coursetro.com/challenges/design">challenges</a></li>
+                                        <li><a href="https://coursetro.com/auth/login">login</a></li>
+                    <li><a href="https://coursetro.com/join">join</a></li>
+                    				</ul>
+			</div>
+
+			<div class="columns medium-4">
+				<ul class="footer-sub-nav">
+				<li><a href="https://coursetro.com/posts">Tutorials</a></li>
+                   <li><a href="https://coursetro.com/contact">contact us</a></li>
+                   <li><a href="https://coursetro.com/chat">chat with us</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+</footer>
+
+
+    <script src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/app.min.js.download"></script>
+
+    <script src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/jquery-ui.min.js.download" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/script.js.download"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99882-20', 'auto');
+  ga('send', 'pageview');
+
+</script>        <script id="dsq-count-scr" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/count.js.download" async=""></script>
+
+    
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/widget_iframe.1025be460f33762a866ea882e1687ff4.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe style="display: none;" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/saved_resource(3).html"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Angular 6 Tutorial - Learn Angular 6 in this Crash Course_files/saved_resource(4).html"></iframe></body></html>

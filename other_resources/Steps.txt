@@ -1,0 +1,39 @@
+Tutorial link: 
+https://coursetro.com/posts/code/154/Angular-6-Tutorial---Learn-Angular-6-in-this-Crash-Course
+
+
+===========================================================
+
+>> nvm list available
+
+>> nvm install 8.11.3 
+(latest LTS)
+
+>> nvm use 8.11.3
+
+>> npm install -g @angular/cli
+
+>> ng new ng6-proj --style=scss --routing
+
+>> cd ng6-proj
+
+(if visual studio code is installed)
+>> code .
+
+(Just have look at /src/app/app.module.ts and app.component.ts)
+
+>> ng generate component sidebar
+
+>> ng g c posts
+
+>> ng g c users
+
+>> ng g c details
+
+(follow the tutorial for Styling, Templating, Routing)
+
+>> ng generate service data
+
+(follow the tutorial for DataService, HTTP, RxJS, ActivatedRoute, Class Binding)
+
+>> npm install @angular/animations@latest --save
