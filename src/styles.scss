@@ -8,9 +8,19 @@ body {
 
 #container {
    display: grid;
+   // for sidebar
    grid-template-columns: 70px auto;
    height: 100%;
 
+   /*
+   // For third column in page (https://www.w3schools.com/cssref/pr_grid-template-columns.asp)
+   grid-template-columns: 70px auto 70px;
+    #content2 {
+        background: black;
+    }
+   */
+   
+   // for content
    #content {
        padding: 30px 50px;
 
